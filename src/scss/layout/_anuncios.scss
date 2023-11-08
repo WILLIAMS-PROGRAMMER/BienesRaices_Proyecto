@@ -1,0 +1,95 @@
+@include tablet
+{
+    .contenedor-anuncios 
+    {
+        @include grid(2,1rem);
+        .anuncio
+        {
+            max-width:51rem;
+        }
+    }
+}
+
+@include desktop 
+{
+    .contenedor-anuncios 
+    {
+        @include grid(4,1rem);
+       
+        .anuncio
+        {
+            max-width:28rem;
+        }
+    }
+}
+
+.anuncio
+{
+    background-color: lighten($gris,5);
+    border: 1px solid darken($gris, 10);
+    max-width:65rem;
+    margin: auto;
+    margin-bottom: 2rem;
+
+    .contenido-anuncio 
+    {
+        padding: 2rem;
+       
+    }
+    img 
+    {
+        max-height: 45rem;  
+    }
+    h3
+    {
+        margin: 0;
+        line-height: 1.9;
+    }
+    p
+    {
+        margin-top: 1rem;
+    }
+    
+}
+
+.precio {
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
+.iconos-caracteristicas {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    max-width: 60rem;
+    justify-content: space-between;
+
+    li{ 
+        display: flex;
+
+        img {
+            flex: 0 0 3rem;
+            margin-right: 1rem;
+
+        }
+        p {
+            font-weight: $black;
+        }
+    }
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.letra-grande{
+    font-size: 5rem;
+    font-style: oblique;
+    font-weight: 800;
+}
+.cortar-text
+{
+    word-wrap: break-word;
+}

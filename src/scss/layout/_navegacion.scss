@@ -1,0 +1,86 @@
+.derecha //ICONO DARK-MODE
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include betweenTabletDesktop {
+        align-items: flex-end;
+    }
+    .dark-mode-boton {
+        width: 3rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        filter: invert(100%);
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @include betweenTabletDesktop {
+            margin-top: 0;
+        }
+    }
+}
+
+.barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    padding-top: 3rem;
+    @include betweenTabletDesktop {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+.navegacion {
+
+   visibility: hidden;
+   opacity: 0;
+   transition: visibility .3s ease-in-out, opacity .5s linear;
+
+    @include betweenTabletDesktop {
+        display: flex;
+        align-items: center;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    a {
+        color:$blanco;
+        text-decoration: none;
+        font-size: 2.2rem;
+        display: block;
+        text-align: center;
+
+        @include betweenTabletDesktop {
+            margin-right: 2rem;
+
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+        &:hover {
+            transition: 1s;
+            color: green;
+        }
+    }
+}
+
+/**Menu de hamburguesa**/
+.mobile-menu {
+    @include betweenTabletDesktop {
+        display: none;
+    }
+    img {
+        width: 5rem;
+    }
+}
+
+.mostrar {
+   visibility: visible;
+   opacity: 1;
+}

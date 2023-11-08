@@ -1,0 +1,23 @@
+.footer 
+{
+    background-color: $grisOscuro;
+    padding: $separacion/2 0;
+    margin-bottom: 0; // si sirve
+
+    .contenedor-footer 
+    {
+        padding-top: calc($separacion / 2);
+    }
+    //importante
+    .navegacion 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .copyright 
+    {
+        color: $blanco;
+        text-align: center;
+    }
+}
