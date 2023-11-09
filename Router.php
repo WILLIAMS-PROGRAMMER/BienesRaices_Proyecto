@@ -29,8 +29,8 @@ class Router
         $rutas_protegidas = ['/admin','/propiedades/crear','/propiedades/actualizar','/vendedores/crear','/vendedores/actualizar','/blogs/crear','/blogs/actualizar'];
         $rutas_protegidas_adminSupremo = ['/NewAdmin/crear','/ListarAdmins'];
 
-        //$urlActual = $_SERVER['PATH_INFO'] ?? '/';
-        $urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';  //seto en este proyecto no es necesario porque no hay token
+        $urlActual = $_SERVER['PATH_INFO'] ?? '/';
+        //$urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';  //seto en este proyecto no es necesario porque no hay token
         $metodo = $_SERVER['REQUEST_METHOD'];
 
        if($metodo == 'GET')
