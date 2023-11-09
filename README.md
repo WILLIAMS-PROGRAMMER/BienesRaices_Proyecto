@@ -1,3 +1,3 @@
 # BienesRaices-proyecto
 
-Este proyecto fue meticulosamente elaborado aplicando los conocimientos adquiridos en el curso de Udemy titulado 'Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL'. Mi gratitud hacia el curso por proporcionar una educación integral y práctica en desarrollo web.
+This project was meticulously crafted using the skills learned from the Udemy course 'Desarrollo Web Completo con HTML5, CSS3, JS AJAX PHP y MySQL'. I am grateful to the course for providing a comprehensive and practical education in web development.
