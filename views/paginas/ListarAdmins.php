@@ -26,15 +26,14 @@
                 <td class="centrar"> <?php echo $Admin->password ?> </td>
                 <td class="centrar"> <?php echo $Admin->rango ?> </td>
                 <td>
-                    <form method="POST" class="w-100" action="/blogs/eliminar">
+                    <form method="POST" class="w-100" action="/NewAdmin/eliminar">
                         <input type="hidden" name="idd" value=" <?php echo $Admin->id; ?> ">
                         <input type="hidden" name="tipo" value="admin">
 
                         <input type="submit" class="boton-rojo-block" value="Eliminar">
                     </form>
                     
-                    <a href="/blogs/actualizar?id=<?php echo $blog->id; ?>" 
-                    class="boton-amarillo-block">Actualizar</a>
+                    <a href="/NewAdmin/actualizar?id=<?php echo $Admin->id; ?>" class="boton-amarillo-block">Actualizar</a>
                 </td>
             </tr>
             

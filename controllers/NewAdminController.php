@@ -31,4 +31,6 @@ class NewAdminController
        [ 'Admin' => $Admin,
          'errores' => $errores ] );
     }
+
+    //Aqui faltaba agregar actualizar,eliminar
 }

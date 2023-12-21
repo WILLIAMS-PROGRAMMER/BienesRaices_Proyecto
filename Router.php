@@ -31,6 +31,7 @@ class Router
 
         $urlActual = $_SERVER['PATH_INFO'] ?? '/';
         //$urlActual = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';  //seto en este proyecto no es necesario porque no hay token
+        
         $metodo = $_SERVER['REQUEST_METHOD'];
 
        if($metodo == 'GET')
